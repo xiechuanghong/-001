@@ -1,0 +1,59 @@
+<view class='container-c'>
+  <view class='top'>
+    <image src="{{user_info.headimg}}"></image>
+    <text>{{user_info.username}}</text>
+  </view>
+  
+
+   <view class='list' bindtap='balance'>
+    <view class='list-icon'>
+      <image src='/images/qb.png'></image>
+    </view>
+    <view class='list-content'>
+      <text class='text'>我的钱包</text>
+      <text class='money' wx:if="{{user_info.money}}">￥{{user_info.money/100}}</text>
+      <text class='money' wx:else>￥{{errMoney}}</text>
+      
+    </view>
+  </view>
+
+   <view class='list' bindtap='goodlist'>
+    <view class='list-icon baogao'>
+      <image src='/images/bg.png'></image>
+    </view>
+    <view class='list-content'>
+      <text class='text'>我的健康报告</text>
+      <image src='/images/yougo.png'></image>
+    </view>
+  </view>
+
+   <view class='list' bindtap='message'>
+    <view class='list-icon liuyan'>
+      <image src='/images/zx.png'></image>
+    </view>
+    <view class='list-content border-none'>
+      <text class='text'>在线留言</text>
+      <image src='/images/yougo.png'></image>
+    </view>
+  </view>
+
+  <view class='list list-top' bindtap='help'>
+    <view class='list-icon bangzhu'>
+      <image src='/images/bz.png'></image>
+    </view>
+    <view class='list-content'>
+      <text class='text'>帮助中心</text>
+      <image src='/images/yougo.png'></image>
+    </view>
+  </view>
+
+  <view class='list' bindtap='phone'>
+    <view class='list-icon'>
+      <image src='/images/kefu.png'></image>
+    </view>
+    <view class='list-content border-none'>
+      <text class='text'>联系客服</text>
+      <image src='/images/yougo.png'></image>
+    </view>
+  </view>
+</view>

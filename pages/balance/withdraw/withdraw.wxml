@@ -1,0 +1,20 @@
+<view class='container-h'>
+  <view class='hint'>
+    <image src='/images/tishi.png'></image>
+    <text>提现金额将自动转到微信钱包账户</text>
+  </view>
+  <view class='count'>
+    <text class='count-text'>提现金额</text>
+    <view class='aa'>
+      <text class='count-money'>￥</text>
+      <input placeholder="" bindinput='inp' value='{{val}}' auto-focus/>
+    </view>
+  </view>
+  <view class='surplus'>
+     <view class='surplus-textContent'>可提现余额<text>{{money}}</text></view> 
+     <view class='surplus-textCol' bindtap='all_money'>全部提现</view> 
+  </view>
+  <view class='surplus-btn' bindtap='money_btn'>
+    两个小时内到账，确定转账
+  </view>
+</view>

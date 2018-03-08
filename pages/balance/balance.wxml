@@ -1,0 +1,13 @@
+<view class='container-g'>
+  <view class='box'>
+    <view class='top'></view>
+    <view class='top-content'>
+        <text class='top-content-text'>账户余额 （元）</text>
+        <text class='top-content-sum'>{{money}}</text>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view class='detail' bindtap='record'>明细</view>
+    <view class='get' bindtap="withdraw">提现</view>
+  </view>
+</view>

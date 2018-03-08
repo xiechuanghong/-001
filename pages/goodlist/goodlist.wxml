@@ -1,0 +1,50 @@
+<scroll-view scroll-y style="height: {{height}}px;" bindscroll="scroll" wx:if="{{good_list != '' }}">
+  <view class='goodlist' wx:for="{{good_list}}" wx:key="" bindtap='detail' data-id="{{item.id}}" data-pay_status="{{item.pay_status}}">
+    <view class='content'>
+      <view class='content-info'>
+        <text class='name'>{{item.username}}，{{item.phone}}</text>
+        <text class='time'>{{item.create_time}}</text>
+        <image wx:if="{{item.status === '1'}}" src='/images/jkgb.png'></image>
+        <image wx:if="{{item.status === '0'}}" src='/images/jkbgdd.png'></image>
+      </view>
+      <view class='content-num'>编号:{{item.number}}</view>
+    </view>
+  </view>
+  <view wx:if="{{isShow}}" class='isShow'>已经是最后了~</view>
+</scroll-view> 
+
+  <view wx:if="{{good_list == ''}}" class='jia'>
+    您暂时没有消息哦~
+  </view>
+<!-- <view class='goodlist'>
+  <view class='content'>
+    <view class='content-info'>
+      <text class='name'>艾宁，1302387xxxx</text>
+      <text class='time'>2017-11-08</text>
+      <image src='/images/jkgb.png'></image>
+    </view>
+    <view class='content-num'>编号:N000000001</view>
+  </view>
+</view>
+
+<view class='goodlist'>
+  <view class='content'>
+    <view class='content-info'>
+      <text class='name'>艾宁，1302387xxxx</text>
+      <text class='time'>2017-11-08</text>
+      <image src='/images/jkgb.png'></image>
+    </view>
+    <view class='content-num'>编号:N000000001</view>
+  </view>
+</view>
+
+<view class='goodlist'>
+  <view class='content'>
+    <view class='content-info'>
+      <text class='name'>艾宁，1302387xxxx</text>
+      <text class='time'>2017-11-08</text>
+      <image src='/images/jkgb.png'></image>
+    </view>
+    <view class='content-num'>编号:N000000001</view>
+  </view>
+</view> -->

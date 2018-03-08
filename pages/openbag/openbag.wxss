@@ -1,0 +1,57 @@
+image {
+  width: 100%;
+  height: 100%;
+}
+.open {
+  width: 80%;
+  height: 65%;
+  position: fixed; 
+  top: 5%;
+  left: 10%;
+  /* left: 50%; */
+  /* margin: 0 auto; */
+  /* position: fixed;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+    /* justify-content: center; */
+}
+.pos-money {
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  color: yellow;
+  font-size: 100rpx;
+}
+.pos-money text {
+  font-size: 70rpx;
+}
+.pos-text {
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+  color: #bebdbd;
+  font-size: 22rpx;
+}
+.pos-text text {
+  border-bottom: 1px solid #ccc;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  margin-top: 40rpx;
+  justify-content: space-between; 
+
+}
+.btn view {
+  width: 135rpx;
+  height: 51rpx;
+  line-height: 51rpx;
+  text-align: center;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #ccc;
+  box-sizing: border-box;
+}

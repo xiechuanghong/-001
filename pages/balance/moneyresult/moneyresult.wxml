@@ -1,0 +1,7 @@
+<view class='content'>
+  <view class='content-opacity'></view>
+  <view class='posabs'>
+    <image src='/images/547123159247322177.png'></image>
+    <text>提现成功，两个小时内到账</text>
+  </view>
+</view>

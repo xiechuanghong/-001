@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/about/about",
+    "pages/redbag/redbag",
+    "pages/pay/pay",
+    "pages/help/helpbag/helpbag",
+    "pages/message/message",
+    "pages/openbag/openbag",
+    "pages/goodlist/goodlist",
+    "pages/balance/moneyresult/moneyresult",
+    "pages/help/help",
+    "pages/balance/withdraw/withdraw",
+    "pages/balance/record/record",
+    "pages/balance/balance",
+    "pages/detailtoll/detailtoll",
+    "pages/detail/detail",
+    "pages/uploadrep/uploadrep",
+    "pages/codefail/codefail",
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#50be06",
+    "navigationBarTitleText": "呗健康",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "backgroundColor":"#fff",
+    "selectedColor": "green",
+    "color": "#000000",
+    "list": [
+      {
+        "pagePath":"pages/home/home",
+        "text":"首页",
+        "selectedIconPath":"images/tabbar/home.png",
+        "iconPath":"images/tabbar/home_a.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "selectedIconPath": "images/tabbar/mine.png",
+        "iconPath": "images/tabbar/mine_a.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+<scroll-view scroll-y style="height: {{height}}px;" bindscroll="scroll" wx:if="{{help_list != ''}}">
+<view class='help-list' wx:if="{{help_list}}" wx:for="{{help_list}}" wx:key="" data-id="{{item.id}}" bindtap='helpDetail'>
+  <text>{{item.title}}</text>
+  <view><image src='/images/yougo.png'></image></view>
+</view>
+<!-- <view wx:if="{{isShow}}" class='isShow'>已经到底了~</view> -->
+</scroll-view>
+
+<view wx:if="{{help_list == ''}}" class='zzzz'>
+  暂时没有任何东西~
+</view>
+
+<!-- <view class='help-list'>
+  <text>付费了怎么不见健康报告？</text>
+  <view><image src='/images/yougo.png'></image></view>
+</view>
+
+<view class='help-list'>
+  <text>如何领红包？</text>
+  <view><image src='/images/yougo.png'></image></view>
+</view> -->

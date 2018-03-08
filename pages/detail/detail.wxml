@@ -1,0 +1,74 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='container-f'>
+  <view class='title'><text class='big'>我的健康报告</text> <text class='small'>(编号：N{{detail.number}})</text></view>
+  <view class='table'>
+    <view class='canvasX'></view>
+
+    <view class='list'>
+      <view class='left'><text>姓名</text></view>
+      <view class='right'><text>{{detail.username}}</text></view>
+    </view>
+
+    <view class='list'>
+      <view class='left'><text>年龄</text></view>
+      <view class='right'><text>{{detail.age}}</text></view>
+    </view>
+
+    <view class='list'>
+      <view class='left'><text>性别</text></view>
+      <view class='right'><text>{{detail.sex}}</text></view>
+    </view>
+
+    <view class='list'>
+      <view class='left'><text>气泡</text></view>
+      <view class='right'><text>{{detail.bubble}}</text></view>
+    </view>
+
+    <view class='list'>
+      <view class='left'><text>沉淀物</text></view>
+      <view class='right'><text>{{detail.dreg}}</text></view>
+    </view>
+
+    <view class='list'>
+      <view class='left'><text>絮状飘浮</text></view>
+      <view class='right'><text>{{detail.float}}</text></view>
+    </view>
+
+    <view class='list last-border' id="last-border">
+      <view class='left'><text>颜色</text></view>
+      <view class='right'><text>{{detail.color}}</text></view>
+    </view>
+    
+  </view>
+
+  <view class='upload'>
+    <text class='upload-text'>上传图片</text>
+    <view class='upload-content'>
+      <text>尿液样品</text>
+      <image src='{{detail.picture}}' data-src="{{detail.picture}}" bindtap='previewImage' mode="aspectFill"></image>
+    </view>
+  </view>
+ 
+ <view class='a-bottom'></view>
+
+ <view class='upload res'>
+    <text class='upload-text'>检测结果</text>
+    <view class="result">
+        <view class='result-text' wx:if="{{!detail.content}}">您的报告已提交平台，专家查看报告后会尽快给您检测结果</view>
+       <template wx:else is="wxParse" data="{{wxParseData:article.nodes}}" /> 
+       <!-- <image src=''></image> -->
+    </view>
+  </view>
+
+  <view class='bottom'>
+    <view class='btn'>
+      <view class='btn-return' bindtap='turn'>返回</view>
+      <view class='btn-consult' bindtap='pay'>付费咨询</view>
+    </view>
+    <view class='hint'>
+      <image src='../../images/tishi.png'></image>
+      注：9.9元即可享受专业医师的专业检测分析及专业意见。
+    </view>
+  </view>
+
+</view>

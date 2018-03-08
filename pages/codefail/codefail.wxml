@@ -1,0 +1,5 @@
+<view class='container-d'>
+  <image src='../../images/fail.png'></image>
+  <text class='text'>亲，扫描不成功，请扫描烟雨丝路专用二维码</text>
+  <view class='btn' bindtap='result'>确定</view>
+</view>

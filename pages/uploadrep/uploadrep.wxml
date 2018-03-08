@@ -1,0 +1,81 @@
+<view class='contatiner-e'>
+    <!-- <text class='top'>上传健康报告</text>
+    <view class='a-bottom'></view> -->
+  <form class='from' bindsubmit="formSubmit">
+
+    <view class='input'>
+      <text>姓名</text>
+      <input bindinput='inp' name="username" bindblur='inp' />
+    </view>
+
+    <view class='input'>
+      <text>电话</text>
+      <input name="phone" bindinput='inp' />
+    </view>
+
+    <view class='input'>
+      <text>年龄</text>
+      <view bindtap='dianji'>
+        <picker bindchange="bindPickerChangeAge" value="{{index}}" range="{{obj.age}}">
+          <input value="{{obj.age[age]}}" disabled="{{true}}" name="age" />
+        </picker>
+      </view>
+      
+    </view>
+
+    <view class='input'>
+      <text>性别</text>
+      <picker bindchange="bindPickerChangeSex" value="{{index}}" range="{{obj.sex}}">
+        <input value="{{obj.sex[sex]}}" name="sex" disabled="{{true}}" />
+      </picker>
+    </view>
+
+    <view class='input'>
+      <text>气泡</text>
+      <picker bindchange="bindPickerChangeBubble" value="{{index}}" range="{{obj.bubble}}">
+        <input value="{{obj.bubble[bubble]}}" name="bubble" disabled="{{true}}" />
+      </picker>
+    </view>
+
+    <view class='input'>
+      <text>沉淀物</text>
+      <picker bindchange="bindPickerChangeDreg" value="{{index}}" range="{{obj.dreg}}">
+        <input value="{{obj.dreg[dreg]}}" name="dreg" disabled="{{true}}" />
+      </picker>
+    </view>
+
+    <view class='input'>
+      <text>絮状飘浮</text>
+      <picker bindchange="bindPickerChangeFloat" value="{{index}}" range="{{obj.float}}">
+        <input value="{{obj.float[float]}}" name="float" disabled="{{true}}" />
+      </picker>
+    </view>
+
+    <view class='input'>
+      <text>颜色</text>
+      <picker bindchange="bindPickerChangeColor" value="{{index}}" range="{{obj.color}}">
+        <input value="{{obj.color[color]}}" name="color" disabled="{{true}}" />
+      </picker>
+    </view>
+
+    <view class='upload'>
+      <text class='upload-text'>上传图片</text>
+      <view class='upload-content'>
+        <text>尿液样品</text>
+        <image src="{{upload||'/images/sctp.png'}}" mode="aspectFill" bindtap='sendImage' />
+        <!-- <image src="{{uploadImg||'../img/comment_icon_add.png'}}" /> -->
+
+      </view>
+    </view>
+
+    <view class='btn'>
+      <!-- <view bindtap='reset' class='btn-canc'>取消</view> -->
+      <button bindtap='reset' class='btn-canc'>取消</button> 
+      <!-- <button style='margin-left:0;'>取消</button>  -->
+      <button formType="submit">查询</button> 
+      <!-- <view class='btn-query' bindtap='report'>查询</view>  -->
+    </view>
+
+  </form>
+</view>
+

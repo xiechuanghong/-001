@@ -1,0 +1,81 @@
+page {
+  background-color: #fff;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25rpx;
+}
+.container-stance {
+  height: 48rpx;
+}
+.container-name {
+  font-size: 30rpx;
+  display: flex;
+  height: 56rpx;
+  line-height: 56rpx;
+}
+.container-name text {
+  width: 181rpx;
+  font-size: 30rpx;
+  color: #141414;
+}
+.container-name input {
+  box-sizing: border-box;
+  border: 1rpx solid #BEBDBD;
+  width: 442rpx;
+  height: 56rpx;
+  color: #4F4F4F;
+  border-radius: 10rpx;
+}
+
+.tel {
+  margin-top: 20rpx;
+}
+.feedback {
+  margin-top: 20rpx;
+  flex-direction: column;
+  height: 100%;
+}
+
+.feedback-content {
+  margin-top: 17rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.feedback-content textarea {
+  height: 203rpx;
+  line-height: 0rpx;
+  width: 100%;
+  font-size: 30rpx;
+  border: 1px solid #BEBDBD;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 10rpx;
+  
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 68rpx;
+}
+.btn view {
+  width: 172rpx;
+  height: 67rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 67rpx;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #BEBDBD;
+}
+.btn-return {
+  margin-right: 141rpx;
+}
+.btn-submit {
+  background-color: #50BE06;
+  color: #fff;
+}

@@ -1,0 +1,25 @@
+.container-d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-d image {
+  width: 688rpx;
+  height: 452rpx;
+  margin-top: 55rpx;
+}
+.container-d .text {
+  margin-top: 53rpx;
+  font-size: 32rpx;
+  color: #0D0D0D;
+}
+.container-d .btn {
+  width: 172rpx;
+  height: 67rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #BEBDBD;
+  font-size: 32rpx;
+  line-height: 67rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}

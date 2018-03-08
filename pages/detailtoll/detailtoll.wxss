@@ -1,0 +1,138 @@
+@import "../../wxParse/wxParse.wxss";
+.container-f {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-f .title {
+  margin-top: 40rpx;
+  margin-bottom: 35rpx;
+}
+.big {
+  font-size: 28rpx;
+  color: #575757;
+}
+.small {
+  font-size: 20rpx;
+  color: #575757;
+  margin-left: 5rpx;
+}
+
+.table {
+  width: 642rpx;
+  height: 525rpx;
+  /* background-color: red; */
+  border: 1px solid #BEBDBD;
+  box-sizing: border-box;
+  position: relative;
+}
+#last-border {
+  border: none;
+}
+.canvasX {
+  background-color: #BEBDBD;
+  position: absolute;
+  height: 100%;
+  width: 1rpx;
+  left: 50%;
+  margin-left: -0.5rpx;
+}
+
+.table .list {
+  height: 75rpx;
+  line-height: 75rpx;
+  /* background-color: blue; */
+  border-bottom: 1rpx solid #BEBDBD;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 30rpx;
+  color: #141414;
+  font-weight: bold;
+}
+.table .list view {
+  width: 50%;
+  height: 100%;
+}
+
+.list .left text {
+  margin-left: 67rpx;
+}
+.list .right {
+  text-align: right;
+}
+.list .right text {
+  margin-right: 83rpx;
+}
+
+.upload {
+  width: 489rpx;
+  margin-top: 18rpx;
+}
+.upload .upload-text {
+  font-size: 30rpx;
+  color: #141414;
+}
+.upload-content { 
+  display: flex;
+  margin-left: 143rpx;
+  flex-direction: column;
+}
+.upload-content text {
+  font-size: 24rpx;
+  color: #4f4f4f;
+}
+.upload image {
+  width: 302rpx;
+  height: 96rpx;
+  margin-top: 16rpx;
+}
+.a-bottom {
+  height: 1px;
+  width: 100%;
+  background-color: #BEBDBD;
+  margin-top: 39rpx;
+  margin-bottom: 29rpx;
+}
+.res {
+  margin: 0;
+  z-index: 1;
+}
+.result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+
+.result-A {
+  margin-left: 78rpx
+}
+.result-B {
+  width: 502rpx;
+  margin-left: 130rpx;
+  margin-top: 26rpx;
+  line-height: 28px;
+  /* letter-spacing: 2rpx; */
+}
+.result-C {
+  text-align: right;
+  margin-right: 140rpx;
+}
+
+.detail-btn {
+  font-size: 32rpx;
+  width: 172rpx;
+  height: 67rpx;
+  line-height: 67rpx;
+  text-align: center;
+  border: 2rpx solid #BEBDBD;
+  border-radius: 10rpx;
+  margin-bottom: 49rpx;
+}
+.wxParse-p {
+  width: 520rpx;
+  box-sizing: border-box;
+}
+.wxParse-p image {
+  width: 100%;
+}

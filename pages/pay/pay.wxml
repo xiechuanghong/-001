@@ -1,0 +1,77 @@
+<view class='container'>
+  <view class='bgImg'></view>
+
+  <view class='pay-content'>
+     <!-- <text class='time'>支付剩余时间 13:40</text> -->
+     <text class='time'></text> 
+    <view class='total'>
+      <text class='icon'>￥</text>
+      <text class='total-num'>{{money}}</text>
+    </view>
+    <text class='order'>付费咨询-订单编号：{{order_sn}}</text>
+  </view>
+
+  <view class='pay'>
+    <image src='/images/qbzf.png'></image>
+    <view class='pay-type'>
+      <text>钱包支付</text>
+      <image src="{{ payImg=='0'?'/images/xz.png':'/images/wxz.png' }}" data-payImg="0" bindtap='tabCut'></image>
+    </view>
+  </view>
+
+  <view class='pay'>
+    <image src='/images/wxzf.png'></image>
+    <view class='pay-type qcB'>
+      <text>微信支付</text>
+      <image src="{{ payImg=='1'?'/images/xz.png':'/images/wxz.png' }}" data-payImg="1" bindtap='tabCut'></image>
+    </view>
+  </view>
+
+  <view class='start-pay' bindtap='pay'>
+    <text class='text'>使用{{payImg==='0'?'钱包':'微信'}}支付</text>
+    <view>
+      <text class='icon'>￥</text>
+      <text class='num'>{{money}}</text>
+    </view>
+  </view>
+
+</view>
+
+<view class='modal' wx:if="{{modal}}">
+
+  <view class='modal-container'>
+
+    <view class='modal-container-text'>
+      <image src='/images/fx.png' catchtap='ismodal'></image>
+      <text>请输入支付密码</text>
+    </view>
+
+    <view class='passwBox' catchtap='passwBox'>
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=1}}"></i>
+      </view>
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=2}}"></i>
+      </view>
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=3}}"></i>
+      </view>
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=4}}"></i>
+      </view>
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=5}}"></i>
+      </view>
+      <view class="password_dot qcr">
+        <i wx:if="{{wallets_password.length>=6}}"></i>
+      </view>
+    </view>
+
+    <view class='forget-passw'>
+      <text>忘记密码？</text>
+    </view>
+    
+  </view>
+
+  <input bindinput="set_wallets_password" password type='number' class='passwVal' focus="{{isfocus}}" maxlength="6" />
+</view>

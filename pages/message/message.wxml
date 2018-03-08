@@ -1,0 +1,23 @@
+<view class="container">
+  <view class='container-stance'></view>
+  <view class='container-name'>
+    <text>称呼</text>
+    <input placeholder="" bindinput='inp' data-name='name' auto-focus/>
+  </view>
+  <view class='container-name tel'>
+    <text>联系电话</text>
+    <input placeholder="" bindinput='inp' data-name='phone' />
+  </view>
+  <view class='container-name feedback'>
+    <text>留言内容</text>
+    <view class='feedback-content'>
+      <textarea bindinput='bindTextAreaBlur' placeholder-style='color:#999;'></textarea>
+      <view class='btn'>
+        <view class='btn-return' bindtap='mine'>返回</view>
+        <view class='btn-submit' bindtap='submit'>提交</view>
+      </view>
+    </view>
+  </view>
+
+  
+</view>

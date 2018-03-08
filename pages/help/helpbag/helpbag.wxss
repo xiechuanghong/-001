@@ -1,0 +1,46 @@
+@import "../../../wxParse/wxParse.wxss";
+.helpget-top {
+  height: 111rpx;
+  line-height: 111rpx;
+  padding-left: 10rpx;
+  font-size: 36rpx;
+  color: #171717;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 31rpx;
+}
+.helpget-text {
+  height: 137rpx;
+  padding: 31rpx 54rpx 0 28rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #171717;
+  line-height: 28px;
+}
+.helpget image {
+  width: 689rpx;
+  height: 420rpx;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.helpget-bottom {
+  padding: 0 31rpx;
+}
+.helpget-bottom .blo {
+  display: block;
+  font-size: 28rpx;
+  width: 668rpx;
+  line-height: 28px;
+  margin-top: 26rpx;
+}
+.writer {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 28rpx;
+  color: #171717;
+}
+.pad {
+  padding: 0 10rpx;
+}

@@ -1,0 +1,24 @@
+<import src="../../../wxParse/wxParse.wxml"/>
+<view class='helpget'>
+  <view class='helpget-top'>{{help_detail.title}}</view>
+  <!-- <view class='helpget-text'>
+    进入大健康小程序首页,点击商家扫一扫，对准指定二维码进行扫一扫领取红包。
+  </view>
+  <view class='helpget-bottom'>
+    <image src='/images/bzzx.png'></image>
+    <text class='blo'>如果你无法简洁的表达你的想法，那只说明你还不够了解她。</text>
+    <view class='writer'>
+      <text>--爱因斯坦</text>
+    </view>
+
+
+
+  </view> -->
+  <view class='pad'>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+
+
+</view>
+
+

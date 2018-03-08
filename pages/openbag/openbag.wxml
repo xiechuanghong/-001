@@ -1,0 +1,9 @@
+<view class='open'>
+  <image src="/images/215841879183998461.png"></image>
+  <view class='pos-money'><text>￥</text>{{money/100}}</view>
+  <view class='pos-text'>红包金额已经存入您的钱包，<text bindtap='mine'>点击查看</text></view>
+  <view class='btn'>
+    <view bindtap='mine'>查看余额</view>
+    <view bindtap='result'>返 回</view>
+  </view>
+</view>

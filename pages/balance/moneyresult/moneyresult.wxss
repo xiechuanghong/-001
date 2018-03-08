@@ -1,0 +1,25 @@
+.content-opacity {
+  height: 314rpx;
+  background-color: #F5053D;
+  opacity: 0.04;
+  position: relative;
+}
+.posabs {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.posabs image {
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: 64rpx;
+}
+.posabs text {
+  font-size: 30rpx;
+  color: #595959;
+  margin-top: 36rpx;
+}

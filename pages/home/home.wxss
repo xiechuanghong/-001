@@ -1,0 +1,47 @@
+.container-a {
+  padding: 0 42rpx;
+}
+.ban {
+  overflow: hidden;
+  margin-top: 30rpx;
+  width:666rpx;
+  height: 443rpx;
+}
+.ban swiper {
+  height: 443rpx;
+}
+.ban image {
+  width:666rpx;
+  height: 443rpx;
+}
+.nav {
+  display: flex;
+  padding: 0 16rpx;
+  justify-content: space-between;
+  margin-top: 61rpx;
+}
+.nav image {
+  width: 129rpx;
+  height: 129rpx;
+  border-radius: 50%;
+}
+.nav-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ .intro {
+  color: #666;
+  font-size: 18rpx;
+  margin-top: 8rpx;
+}
+.nav-text {
+  font-size: 34rpx;
+  margin-top: 30rpx;
+  font-family: PingFang-SC-Medium;
+} 
+
+.swiper-image image {
+  width: 100%;
+  height: 100%;
+}

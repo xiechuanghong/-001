@@ -1,0 +1,3 @@
+<view>
+  <image bindtap='openbag' src='/images/876770587217425171.png'></image>
+</view>

@@ -1,0 +1,18 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='container-b'>
+  <text class='title'>{{about.title}}</text>
+
+  <view class='a-bottom'></view>
+  <view wx:if="{{isshow}}">...</view>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" /> 
+
+  <!-- <text>华为是全球领先的信息与通讯科技（ICT）解决方案供应商，专注于ICT领域，坚持稳健经营、持续创新、开放合作，在电信运营商、企业、终端和云计算等领域构筑了端到端的解决方案优势，为运营商客户、企业客户和消费者提供有竞争力的ICT解决方案、产品和服务，并致力与使能未来信息社会、构建跟美好的全联接世界。目前，华为约有18万名员工，业务遍及全球170多个国家和地区，服务全世界百分之一以上的人口。
+</text>
+
+  <view class='b-bottom'></view>
+
+  <image src='../../images/me_pic.png'></image>
+  <text class='content-text'>华为是全球领先的信息与通讯科技（ICT）解决方案供应商，专注于ICT领域，坚持稳健经营、持续创新、开放合作，在电信运营商、企业、终端和云计算等领域构筑了端到端的解决方案优势，为运营商客户、企业客户和消费者提供有竞争力的ICT解决方案、
+  </text> -->
+
+</view>

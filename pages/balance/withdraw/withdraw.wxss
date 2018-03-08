@@ -1,0 +1,73 @@
+.hint {
+  height: 84rpx;
+  line-height: 84rpx;
+  background-color: #B3B1B1;
+  padding-left: 30rpx;
+}
+.hint image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+.hint text {
+  vertical-align: middle;
+  font-size: 28rpx;
+  color: #fff;margin-left: 9rpx;
+}
+.count {
+  height: 120rpx;
+  padding-left: 40rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+.count-text {
+  font-size: 34rpx;
+
+}
+.count-money {
+  font-size: 38rpx;
+  color: #B3B1B1;
+}
+.count input {
+  font-size: 38rpx;
+  width: 219rpx;
+}
+.aa {
+  display: flex;
+  flex-direction: row;
+}
+.surplus {
+  height: 115rpx;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding:22rpx 166rpx 0 41rpx;
+  justify-content: space-between;
+}
+.surplus-textContent {
+  font-size: 26rpx;
+  color: #999;
+}
+.surplus-textContent text {
+  color: #ff4141;
+}
+.surplus-textCol {
+  height: 28rpx;
+  color: #D74949;
+  font-size: 26rpx;
+  border-bottom: 1rpx solid #ff4141;
+}
+.surplus-btn {
+  width: 690rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #F5053D;
+  text-align: center;
+  color: #fff;
+  border-radius: 10rpx;
+  margin: 0 auto;
+}

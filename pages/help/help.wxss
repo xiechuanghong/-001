@@ -1,0 +1,32 @@
+.help-list {
+  height: 100rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 100rpx;
+  padding-left: 22rpx;
+  padding-right: 39rpx;
+  vertical-align: middle;
+  border-bottom: 1px solid #E5E5E5;
+}
+.help-list text {
+  font-size: 34rpx;
+  color: #171717;
+}
+.help-list image {
+  width: 19.8rpx;
+  height: 18rpx;
+  vertical-align: middle;
+}
+.zzzz {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.isShow {
+  text-align: center;
+}

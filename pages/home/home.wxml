@@ -1,0 +1,34 @@
+<!-- <view class='container-a'>
+  <view class='ban'>
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}">
+      <swiper-item wx:for="{{img_arr}}" wx:key="" data-src="{{item.link}}" bindtap="img_swiper">    
+        <image src="{{item.img}}"/>    
+      </swiper-item> 
+      
+    </swiper>
+  </view>
+
+  <view class='nav'>
+     <view class='nav-content' bindtap='intro'>
+      <image src='../../images/472783096839743851.png'></image>
+      <text class='nav-text'>企业简介</text>
+      <text class='intro'>enterprise profile</text>
+    </view>
+    <view class='nav-content' bindtap='sys'>
+      <image src='../../images/562441178836381269.png'></image>
+      <text class='nav-text'>扫一扫</text>
+      <text class='intro'>Flicking a</text>
+    </view><view class='nav-content' bindtap='report'>
+      <image src='../../images/75291641657562606.png'></image>
+      <text class='nav-text'>健康报告</text>
+      <text class='intro'>Health report</text>
+    </view> 
+  </view>
+</view> -->
+
+<swiper indicator-dots="{{true}}" class='swiper-image' style="height:{{height}}px" autoplay="{{true}}">
+  <swiper-item wx:for="{{img_arr}}" data-id="{{index}}" wx:key="" data-src="{{item.link}}" bindtap="img_swiper">    
+    <image src="{{item.img}}"/>    
+  </swiper-item>
+  
+</swiper>

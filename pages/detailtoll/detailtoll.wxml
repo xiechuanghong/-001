@@ -1,0 +1,73 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='container-f'>
+  <view class='title'><text class='big'>我的健康报告</text> <text class='small'>(编号：{{detailtoll.number}})</text></view>
+  <view class='table'>
+    <view class='canvasX'></view>
+
+    <view class='list'>
+      <view class='left'><text>姓名</text></view>
+      <view class='right'><text>{{detailtoll.username}}</text></view>
+    </view>
+
+    <view class='list'>
+      <view class='left'><text>年龄</text></view>
+      <view class='right'><text>{{detailtoll.age}}</text></view>
+    </view>
+
+    <view class='list'>
+      <view class='left'><text>性别</text></view>
+      <view class='right'><text>{{detailtoll.sex}}</text></view>
+    </view>
+
+    <view class='list'>
+      <view class='left'><text>气泡</text></view>
+      <view class='right'><text>{{detailtoll.bubble}}</text></view>
+    </view>
+
+    <view class='list'>
+      <view class='left'><text>沉淀物</text></view>
+      <view class='right'><text>{{detailtoll.dreg}}</text></view>
+    </view>
+
+    <view class='list'>
+      <view class='left'><text>絮状飘浮</text></view>
+      <view class='right'><text>{{detailtoll.float}}</text></view>
+    </view>
+
+    <view class='list' id="last-border">
+      <view class='left'><text>颜色</text></view>
+      <view class='right'><text>{{detailtoll.color}}</text></view>
+    </view>
+    
+  </view>
+
+  <view class='upload'>
+    <text class='upload-text'>上传图片</text>
+    <view class='upload-content'>
+      <text>尿液样品</text>
+      <image src='{{detailtoll.picture}}' data-src="{{detailtoll.picture}}" bindtap='previewImage' mode="aspectFill"></image>
+    </view>
+  </view>
+ 
+ <view class='a-bottom'></view>
+
+ <view class='result' wx:if="{{!content}}">
+  <text class='result-A'>尊敬的先生/女士:</text>
+  <text class='result-B'>您好，平台将安排专业的医生帮您进行分析，请耐心等待1-3的工作日。</text>
+  <text class='result-C'>--郑医生</text>
+ </view>
+
+ <view class='result' wx:if="{{content}}">
+  <text class='result-A'>尊敬的先生/女士:</text>
+  <view class='result-B'>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" /> 
+  </view>
+  <!-- <text class='result-B'>您好,经过详细对比,您的身体健康,需要多注意多喝水,多注意饮食和休息。</text>
+  <text class='result-C'>--郑医生</text> -->
+ </view>
+
+ <view class='a-bottom'></view>
+
+  <view class='detail-btn' bindtap='result'>确定</view>
+
+</view>
